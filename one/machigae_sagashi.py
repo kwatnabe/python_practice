@@ -16,6 +16,3 @@ base = pyplot.imshow(diff)
 pyplot.imshow(diff)
 pyplot.imshow(img)
 pyplot.show()
-
-
-
