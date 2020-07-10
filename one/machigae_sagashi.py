@@ -12,7 +12,6 @@ img = Image.open("gazou1.png")
 img = img.copy()
 img.putalpha(128)
 
-base = pyplot.imshow(diff)
 pyplot.imshow(diff)
 pyplot.imshow(img)
 pyplot.show()
