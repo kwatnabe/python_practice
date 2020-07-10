@@ -5,13 +5,16 @@ from PIL import Image
 img1 = cv2.imread("gazou1.png")
 img2 = cv2.imread("gazou2.png")
 
-img_diff = cv2.absdiff(img1, img2)
+# 間違えを取得
+diff = cv2.absdiff(img1, img2)
+
 img = Image.open("gazou1.png")
-img_base = img.copy()
-img_base.putalpha(128)
-base = pyplot.imshow(img_diff)
-pyplot.imshow(img_diff)
-pyplot.imshow(img_base)
+img = img.copy()
+img.putalpha(128)
+
+base = pyplot.imshow(diff)
+pyplot.imshow(diff)
+pyplot.imshow(img)
 pyplot.show()
 
 
